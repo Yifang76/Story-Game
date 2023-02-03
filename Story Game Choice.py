@@ -24,11 +24,11 @@ while loop == False:
 
     elif q == "Rt" or q == "Randomised tale" or q == "Randomised Tale" or q == "Random":
         nlist = "person", "boar", "bull", "anaconda", "titan"
-
         n = random.choice(nlist)
         vlist = "danced", "lunged", "attacked", "rushed", "killed"
         v = random.choice(vlist)
-
+        elist = "character", "person", "building", "teacher", "student", "child" 
+        e = random.choice(elist)
         
         if v == "danced":
             con = str("towards ")
@@ -37,7 +37,7 @@ while loop == False:
         else:
             con = str("")
 
-        print("The "+n+" "+v+" "+con+"the character.")
+        print("The "+n+" "+v+" "+con+"the "+e+".")
         endloop = input("Would you like to end the program? ").capitalize()
         if endloop == "Yes":
             print("Have a good day ")
